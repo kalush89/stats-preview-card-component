@@ -1,4 +1,66 @@
+/*
+Set margin to 0; 
+Set font-family
+Set font-size
+Set bacground color
+*/
 body {
+    margin: 0;
     font-family: 'Inter', 'Lexend Deca', sans-serif;
     font-size: 15px;
+    background: hsl(233, 47%, 7%);
+}
+
+/*
+Set parent flex; 
+Set flex diirection
+Set set position of flex items
+Align flex items
+Wrap fles items to ease responsivenes
+Max width of mobile view
+Centralise it all
+*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 450px;/* Set that of desktops*/
+    margin: 3.5em auto;
+}
+
+/*
+Set parent flex; 
+Set flex diirection
+Set set position of flex items
+Align flex items
+Wrap fles items to ease responsivenes
+*/
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/*Set parent flex; 
+  Set flex diirection
+  Wrap fles items to ease responsivenes
+*/
+.right {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/*Set parent flex; 
+  Set flex diirection
+  Wrap fles items to ease responsivenes
+*/
+.left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
