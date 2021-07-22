@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-  
+
   <link rel="stylesheet" href="./css/styles.css">
   
   <title>Frontend Mentor | Stats preview card component</title>
@@ -20,16 +22,16 @@
     <main>
         <div class="card">
             <section class="right">
-                <div></div>
+                <div id="photo"></div>
             </section>
             <section class="left">
-                <div>Get insights that help your business grow.</div>
-                <div>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+                <div id="col-1">Get <span>insights</span> that help your business grow.</div>
+                <div id="col-2">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
                     experience, and overall efficiency.</div>
-                <div>
-                    <div>10k+ companies</div>
-                    <div>314 templates</div>
-                    <div>12m+ queries</div>
+                <div id="col-3">
+                    <div class="rw-1"><div class="count">10k+</div> <div class="item">companies</div></div>
+                    <div class="rw-2"><div class="count">314</div> <div class="item">templates</div></div>
+                    <div class="rw-3"><div class="count">12m+</div> <div class="items">queries</div></div>
                 </div>
             </section>
         </div><!--End card-->
