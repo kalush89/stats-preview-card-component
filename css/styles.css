@@ -22,8 +22,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    max-width: 450px;/* Set that of desktops*/
-    margin: 3.5em auto;
+    max-width: 400px;/* Set that of desktops*/
+    margin: 5em auto;
 }
 
 /*Set parent flex; 
@@ -47,19 +47,27 @@ Wrap fles items to ease responsivenes*/
   Wrap fles items to ease responsivenes*/
 .right {
     display: flex;
+    flex: 1;
     flex-direction: column;
     flex-wrap: nowrap;
 }
 
 .right>#img {
-    background-image: url(../img/image-header-mobile.jpg);
+    background: url(../img/image-header-mobile.jpg) 0 0 no-repeat;
+    border-radius: 0.2rem 0.2rem 0 0;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-size: cover;
+    overflow: hidden;
 }
 
 /*Set parent flex; 
-  Set flex diirection
+  Set flex direction
   Wrap fles items to ease responsivenes*/
 .left {
     display: flex;
+    flex: 1;
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 50px;
@@ -95,6 +103,7 @@ Wrap fles items to ease responsivenes*/
     flex-direction: column;
     flex-wrap: nowrap;
     color: hsl(0, 0%, 100%);
+    padding: 10px 30px;
 }
 
 .count {
@@ -114,16 +123,21 @@ Wrap fles items to ease responsivenes*/
     }
 
     .card {
-        flex-direction:row-reverse;
+        flex-direction: row-reverse;
     }
 
     .right>#img {
-        background:url(../img/image-header-desktop.jpg) center/contain no-repeat;
-        display: block;
-        mix-blend-mode: multiply;
-        opacity: 0.78;
-        min-height: 12.5rem;
+        background:url(../img/image-header-desktop.jpg)  0 0 no-repeat;
     }
+
+   /* .layer{
+        background-color: hsl(277, 64%, 61%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }*/
 
     #col-3-stats {
         flex-direction: row;
