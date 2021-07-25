@@ -8,16 +8,15 @@ body {
     font-family: 'Inter', 'Lexend Deca', sans-serif;
     font-size: 15px;
     background: hsl(233, 47%, 7%);
+    height: 100%;
 }
 
 main {
-    max-width: 400px;
-    margin: auto;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px;
+    max-width: 300px;
+    margin: 5em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card {
@@ -97,7 +96,7 @@ main {
 
 @media screen and (min-width: 500px) {
     main {
-        max-width: 750px;
+        max-width: 700px;
     }
 
     .card {
