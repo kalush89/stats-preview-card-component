@@ -1,125 +1,97 @@
-/*Set margin to 0; 
-Set font-family
-Set font-size
-Set bacground color*/
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: 'Inter', 'Lexend Deca', sans-serif;
     font-size: 15px;
     background: hsl(233, 47%, 7%);
 }
 
-/*Set parent flex; 
-Set flex diirection
-Set set position of flex items
-Align flex items
-Wrap fles items to ease responsivenes
-Max width of mobile view
-Centralise it all*/
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    max-width: 400px;/* Set that of desktops*/
+    max-width: 350px;
     margin: 5em auto;
 }
 
-/*Set parent flex; 
-Set flex diirection
-Set set position of flex items
-Align flex items
-Wrap fles items to ease responsivenes*/
 .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background: hsl(244, 38%, 16%);
-    margin: 30px;
     border-radius: 5px;
 }
 
-/*Set parent flex; 
-  Set flex diirection
-  Wrap fles items to ease responsivenes*/
 .right {
-    display: flex;
     flex: 1;
-    flex-direction: column;
-    flex-wrap: nowrap;
+}
+
+.left {
+    flex: 1;
+    margin: 0 50px;
 }
 
 .right>#img {
-    background: url(../img/image-header-mobile.jpg) 0 0 no-repeat;
+    background:url('../img/image-header-mobile.jpg');
     border-radius: 0.2rem 0.2rem 0 0;
-    position: relative;
-    width: 350px;
-    height: 350px;
+    height: 300px;
+    flex-basis: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
 }
 
-/*Set parent flex; 
-  Set flex direction
-  Wrap fles items to ease responsivenes*/
-.left {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 50px;
-}
-
-.left>#col-1-heading>p {
-    font-size: 1.5rem;
+.left > h1 {
+    font-size: 1.6rem;
     font-weight: 700;
     color:  hsl(0, 0%, 100%);
-
+    text-align: center;
+    padding-bottom: 20px;
 }
 
-.left>#col-1-heading>p>span {
+.left > h1 > span {
     color: hsl(277, 64%, 61%);
 }
 
-.left>#col-2-para>p {
-    font-size: 0.7rem;
+.left > p {
+    font-size: .8rem;
     line-height: 1.8;
     color: hsla(0, 0%, 100%, 0.75); 
+    text-align: center;
+    padding-bottom: 40px;
 }
 
-#col-3-stats {
+#stats {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.rw-1, .rw-2, .rw-3 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+.stats-item {
+    
     color: hsl(0, 0%, 100%);
-    padding: 10px 30px;
+    flex-grow: 1;
+    padding-bottom: 20px;
 }
 
-.count {
-    font-size: 1rem;
+.stats-item > h3 {
     font-weight: 700;
-    ;
+    margin-bottom: 3px;
+    text-align: center;
 }
 
-.item {
+.stats-item >small {
     text-transform: uppercase;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+    text-align: center;
 }
 
-@media screen and (min-width: 631px) {
+@media screen and (min-width: 500px) {
     main {
-        max-width: 800px;
+        max-width: 750px;
     }
 
     .card {
@@ -127,19 +99,38 @@ Wrap fles items to ease responsivenes*/
     }
 
     .right>#img {
-        background:url(../img/image-header-desktop.jpg)  0 0 no-repeat;
+        background:url('../img/image-header-desktop.jpg');
+        border-radius: 0 0.2rem 0.2rem 0;
+        height: 100%;
+        flex-basis: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
-   /* .layer{
-        background-color: hsl(277, 64%, 61%);
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-    }*/
+    .left {
+        padding: 30px;
+    }
 
-    #col-3-stats {
+    .left > p {
+        text-align: left;
+    }
+
+    .left > h1 {
+        text-align: left;
+    }
+
+    #stats {
         flex-direction: row;
     }
+    .stats-item {
+        padding-bottom: 0;
+    }
+
+    .stats-item > h3, 
+    .stats-item > small {
+        text-align: left;
+    }
+
+
 }
