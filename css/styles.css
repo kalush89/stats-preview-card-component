@@ -13,10 +13,13 @@ body {
 
 main {
     max-width: 300px;
-    margin: 5em auto;
+    margin: auto;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;  
+    padding-top: 20px; 
 }
 
 .card {
@@ -64,7 +67,7 @@ main {
     line-height: 1.8;
     color: hsla(0, 0%, 100%, 0.75); 
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 
 #stats {
@@ -79,7 +82,7 @@ main {
     
     color: hsl(0, 0%, 100%);
     flex-grow: 1;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 .stats-item > h3 {
@@ -115,7 +118,7 @@ main {
     }
 
     .left {
-        padding: 30px;
+        padding: 20px;
     }
 
     .left > p {
@@ -124,7 +127,7 @@ main {
 
     .left > h1 {
         text-align: left;
-        padding-top: 10px;
+       padding: 15px 0;
     }
 
     #stats {
