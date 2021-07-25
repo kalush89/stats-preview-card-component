@@ -67,7 +67,7 @@ main {
     line-height: 1.8;
     color: hsla(0, 0%, 100%, 0.75); 
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 #stats {
@@ -82,7 +82,7 @@ main {
     
     color: hsl(0, 0%, 100%);
     flex-grow: 1;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .stats-item > h3 {
@@ -95,6 +95,7 @@ main {
     text-transform: uppercase;
     font-size: 0.6rem;
     text-align: center;
+    letter-spacing: .1em;
 }
 
 @media screen and (min-width: 500px) {
@@ -123,6 +124,7 @@ main {
 
     .left > p {
         text-align: left;
+        padding-bottom: 20px;
     }
 
     .left > h1 {
