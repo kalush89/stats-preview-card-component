@@ -51,7 +51,7 @@ main {
 }
 
 .left > h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color:  hsl(0, 0%, 100%);
     text-align: center;
@@ -63,7 +63,7 @@ main {
 }
 
 .left > p {
-    font-size: .8rem;
+    font-size: .7rem;
     line-height: 1.8;
     color: hsla(0, 0%, 100%, 0.75); 
     text-align: center;
@@ -120,6 +120,7 @@ main {
 
     .left {
         padding: 20px;
+        
     }
 
     .left > p {
@@ -136,7 +137,7 @@ main {
         flex-direction: row;
     }
     .stats-item {
-        padding-bottom: 0;
+        padding-bottom: 20px;
     }
 
     .stats-item > h3, 
