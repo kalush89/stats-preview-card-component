@@ -19,7 +19,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;  
-    padding-top: 20px; 
+    padding: 50px 0; 
 }
 
 .card {
@@ -63,7 +63,7 @@ main {
 }
 
 .left > p {
-    font-size: .7rem;
+    font-size: .75rem;
     line-height: 1.8;
     color: hsla(0, 0%, 100%, 0.75); 
     text-align: center;
